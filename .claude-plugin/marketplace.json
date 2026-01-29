@@ -1,0 +1,20 @@
+{
+  "name": "holbora-skills",
+  "owner": {
+    "name": "holbora"
+  },
+  "metadata": {
+    "description": "Custom Claude Code skills by holbora",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "openapi-validator",
+      "description": "Validate OpenAPI 3.0/3.1 specifications for schema correctness and best practices",
+      "source": "./",
+      "skills": [
+        "./skills/openapi-validator"
+      ]
+    }
+  ]
+}
