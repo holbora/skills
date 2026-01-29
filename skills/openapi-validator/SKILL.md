@@ -26,10 +26,21 @@ python scripts/validate_openapi.py <path-to-spec>
 
 ## Requirements
 
-Install dependencies before first use:
+Install dependencies before first use. Modern systems require a virtual environment:
 
 ```bash
-pip install openapi-spec-validator pyyaml
+# Using uv (recommended)
+uv venv .venv && source .venv/bin/activate && uv pip install openapi-spec-validator pyyaml
+
+# Or using standard venv
+python3 -m venv .venv && source .venv/bin/activate && pip install openapi-spec-validator pyyaml
+```
+
+Once installed, run the validator with the activated environment:
+
+```bash
+source .venv/bin/activate
+python scripts/validate_openapi.py <path-to-spec>
 ```
 
 ## What Gets Checked
