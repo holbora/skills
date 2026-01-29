@@ -1,0 +1,74 @@
+openapi: 3.0.3
+info:
+  title: API With Issues
+  version: 1.0.0
+  # Missing: description
+
+# Missing: servers array
+
+paths:
+  /users:
+    get:
+      # Missing: operationId
+      # Missing: summary or description
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+    post:
+      operationId: createUser
+      # Missing: summary or description
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserInput'
+      responses:
+        '201':
+          description: Created
+
+  /users/{id}:
+    get:
+      operationId: getUser
+      summary: Get user
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        # Missing: success response description would trigger if empty
+        '200':
+          description: OK
+        '404':
+          # Missing: description for this response
+          description: ""
+
+components:
+  schemas:
+    User:
+      # Missing: description
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          # Missing: type
+          description: User email
+
+    UserInput:
+      type: object
+      description: Input for creating user
+      properties:
+        name:
+          type: string
+          # Missing: description
+        email:
+          type: string
+          description: Email address
