@@ -15,6 +15,22 @@
       "skills": [
         "./skills/openapi-validator"
       ]
+    },
+    {
+      "name": "openapi-design",
+      "description": "Design or extend the OpenAPI spec when adding endpoints, resources, or modifying the API contract",
+      "source": "./",
+      "skills": [
+        "./skills/openapi-design"
+      ]
+    },
+    {
+      "name": "openapi-resource",
+      "description": "Implement a resource from the OpenAPI spec test-first with failing test, stub, then implementation",
+      "source": "./",
+      "skills": [
+        "./skills/openapi-resource"
+      ]
     }
   ]
 }
