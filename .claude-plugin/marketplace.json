@@ -9,26 +9,12 @@
   },
   "plugins": [
     {
-      "name": "openapi-validator",
-      "description": "Validate OpenAPI 3.0/3.1 specifications for schema correctness and best practices",
+      "name": "openapi",
+      "description": "Design, validate, and implement OpenAPI specs test-first",
       "source": "./",
       "skills": [
-        "./skills/openapi-validator"
-      ]
-    },
-    {
-      "name": "openapi-design",
-      "description": "Design or extend the OpenAPI spec when adding endpoints, resources, or modifying the API contract",
-      "source": "./",
-      "skills": [
-        "./skills/openapi-design"
-      ]
-    },
-    {
-      "name": "openapi-resource",
-      "description": "Implement a resource from the OpenAPI spec test-first with failing test, stub, then implementation",
-      "source": "./",
-      "skills": [
+        "./skills/openapi-validator",
+        "./skills/openapi-design",
         "./skills/openapi-resource"
       ]
     }
